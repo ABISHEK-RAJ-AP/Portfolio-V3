@@ -66,7 +66,7 @@ export default function Socials({ className }: { className?: string }) {
             </Link>
             <Link
                 className="text-theme-primary font-black hover:scale-125 duration-300 transition-transform delay-0"
-                href="https://drive.google.com/file/d/149i-T_q3gYWulD_niFa-3InpbXM3BBAY/view?usp=sharing"
+                href="https://drive.google.com/file/d/1gRHEnknxBPBsunWS20fu2ySaponSIcCU/view?usp=sharing"
                 target="_blank"
                 aria-label="Abishek Raj's Resume (opens in a new tab)"
             >
