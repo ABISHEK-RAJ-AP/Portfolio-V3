@@ -29,7 +29,7 @@ export const experiences = [
   },
   {
     date: 'Jun 2024 - July 2024',
-    title: 'Nanlogical Consultancy Pvt Ltd',
+    title: 'Nanlogical Consultance Pvt Ltd',
     role: 'Junior Web Developer Intern',
     description: 'Assisted in building data-driven solutions for clients, focusing on enhancing business performance through advanced analytics.',
   },
