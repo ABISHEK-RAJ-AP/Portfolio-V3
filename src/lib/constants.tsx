@@ -16,7 +16,7 @@ export const ANIMATION_DURATION = {
 // Define experiences
 export const experiences = [
   {
-    date: 'Jan 2025-Present',
+    date: 'Feb 2025-Present',
     title: 'CDAC Delhi',
     role: 'Software Engineer (Backend & AI) Intern',
     description: 'Worked on advanced technologies in data analytics and software development under the guidance of industry experts.',
