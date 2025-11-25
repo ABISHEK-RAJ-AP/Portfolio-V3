@@ -1,41 +1,60 @@
 import codenest from '@/assets/images/aitriplanner-cover.webp';
 import caraura from '@/assets/images/thewaitercompany-cover.webp';
 import fitsphereai from '@/assets/images/threepointonefour-cover.webp';
+
 import Contact from '@/components/contact';
 import Experiences from '@/components/experiences';
 import Home from '@/components/home';
 import Works from '@/components/works';
-import { Section, SectionColors, Sections } from './types'; // ensure these are properly defined
-// Define animation durations first to avoid initialization issues
+
+import { Section, SectionColors, Sections } from './types';
+
+// -------------------------------------------------------------
+// Animation Durations
+// -------------------------------------------------------------
 export const ANIMATION_DURATION = {
   SHORT: 0.2,
   MEDIUM: 0.4,
   LONG: 0.8,
 };
 
-// Define experiences
+// -------------------------------------------------------------
+// EXPERIENCES (UPDATED + CORRECTED)
+// -------------------------------------------------------------
 export const experiences = [
   {
-    date: 'Feb 2025-Present',
-    title: 'CDAC Delhi',
-    role: 'Software Engineer (Backend & AI) Intern',
-    description: 'Worked on advanced technologies in data analytics and software development under the guidance of industry experts.',
+    date: 'Oct 2025 – Present',
+    title: 'C-DAC Delhi',
+    role: 'Project Associate (AI & Full Stack Development)',
+    description:
+      'Contributing to a sovereign multilingual AI chatbot under the Digital Census 2027 initiative, integrating Spring Boot, Rasa, PgVector, and vLLM for secure, scalable, and explainable LLM-powered interactions.',
   },
   {
-    date: 'Nov 2023 - May 2024',
+    date: 'Feb 2025 – Aug 2025',
+    title: 'C-DAC Delhi',
+    role: 'WBL Intern (Full Stack Development)',
+    description:
+      'Engineered the CHMS (C-DAC Hiring Management System) using Spring Boot and React.js with JWT auth, RBAC, and bulk import for 10K+ candidate records. Built an AI-powered resume shortlisting pipeline using OCR, Transformer embeddings, and XGBoost. Developed multilingual dashboards with i18n, real-time PDF/Excel export, and created a conversational internal AI assistant using Spring Boot APIs, semantic search, and React UI.',
+  },
+  {
+    date: 'Nov 2023 – May 2024',
     title: 'CodeJet',
     role: 'Software Engineer',
-    description: 'Contributed to full-stack development for client projects, focusing on creating scalable and robust web applications.',
+    description:
+      'Contributed to full-stack development for client projects, building scalable and robust web applications using React and Node.js.',
   },
   {
-    date: 'Jun 2024 - July 2024',
+    date: 'Jun 2024 – Jul 2024',
     title: 'Nanlogical Consultance Pvt Ltd',
     role: 'Junior Web Developer Intern',
-    description: 'Assisted in building data-driven solutions for clients, focusing on enhancing business performance through advanced analytics.',
+    description:
+      'Assisted in building data-driven web solutions, enhancing client business performance through analytics-driven feature development.',
   },
 ];
 
-// Define sections with proper structure
+// -------------------------------------------------------------
+// SECTIONS
+// -------------------------------------------------------------
 export const SECTIONS: Section[] = [
   { content: <Home />, title: 'Home' },
   { content: <Works />, title: 'Works' },
@@ -43,7 +62,9 @@ export const SECTIONS: Section[] = [
   { content: <Contact />, title: 'Contact' },
 ];
 
-// Define themes for different sections
+// -------------------------------------------------------------
+// THEMES
+// -------------------------------------------------------------
 export const THEMES: Record<string, SectionColors> = {
   main: {
     background: 'var(--theme-1-background)',
@@ -77,7 +98,9 @@ export const THEMES: Record<string, SectionColors> = {
   },
 };
 
-// Define section theme mapping
+// -------------------------------------------------------------
+// SECTION THEME MAP
+// -------------------------------------------------------------
 export const SECTION_THEME_MAP: {
   [key: number]: SectionColors | { [subKey: number]: SectionColors };
 } = {
@@ -91,13 +114,16 @@ export const SECTION_THEME_MAP: {
   [Sections.Contact]: THEMES.main,
 };
 
-// Define works items
+// -------------------------------------------------------------
+// WORK ITEMS
+// -------------------------------------------------------------
 export const WORKS_ITEMS = [
   {
     cover: codenest,
     title: 'CodeNest',
     subject: 'Realtime Collaborative Code Editor',
-    description: "CodeNest is a real-time collaborative code editor built with Flask, React, and WebSockets, enabling seamless team collaboration on coding projects.",
+    description:
+      'A real-time collaborative code editor built using Flask, React, and WebSockets, enabling seamless team coding with low-latency sync.',
     link: 'https://github.com/ABISHEK-RAJ-AP/CodeNest-Collaborative-Editor',
     techStack: ['Flutter', 'Firebase', 'Machine Learning', 'Google Cloud'],
   },
@@ -105,7 +131,8 @@ export const WORKS_ITEMS = [
     cover: fitsphereai,
     title: 'FitSphereAI',
     subject: 'AI-Driven Fitness Tracking',
-    description: "FitSphere AI uses AI to provide real-time fitness tracking, posture correction, and personalized fitness recommendations.",
+    description:
+      'AI-powered fitness assistant providing posture correction, real-time tracking, and personalized recommendations.',
     link: 'https://github.com/ABISHEK-RAJ-AP/FitSphereAI',
     techStack: ['TensorFlow', 'Streamlit', 'Python', 'Firebase'],
   },
@@ -113,11 +140,14 @@ export const WORKS_ITEMS = [
     cover: caraura,
     title: 'CarAura',
     subject: 'Mobile App Prototype for Electric Vehicles',
-    description: "CarAura is an app that enhances vehicle management, improves driving efficiency, and ensures driver safety for EVs and cars.",
+    description:
+      'A smart vehicle management and safety companion app designed for EVs, improving driving efficiency and monitoring.',
     link: 'https://github.com/ABISHEK-RAJ-AP/CarAura-Mobiliothon4.0',
     techStack: ['Flutter', 'Google Maps API', 'AI', 'Node.js', 'Expo'],
   },
 ];
 
-// Define number of subsections for works
-export const WORK_SUBSECTIONS = WORKS_ITEMS.length;  // Ensure correct length reference
+// -------------------------------------------------------------
+// WORK SUBSECTIONS
+// -------------------------------------------------------------
+export const WORK_SUBSECTIONS = WORKS_ITEMS.length;
