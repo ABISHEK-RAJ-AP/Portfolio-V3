@@ -6,8 +6,8 @@ export default function Experiences() {
   return (
     <div className="flex flex-col-reverse gap-5 lg:flex-row items-center lg:gap-24 relative lg:right-40 mr-5">
       <div className="relative flex flex-col items-center">
-        <span className="text-lg lg:text-2xl text-white mb-2">
-          . <b>1</b> Year intern exp
+        <span className="text-lg lg:text-2xl text-white mb-2 text-center">
+          . <b>AI & Full Stack</b> @ C-DAC
         </span>
         {/* Animated SVG underline */}
         <motion.svg
@@ -29,7 +29,7 @@ export default function Experiences() {
         </motion.svg>
       </div>
       
-      <div className="relative flex flex-col items-start pl-5 w-full">
+      <div className="relative flex flex-col items-start pl-5 w-full max-h-[70vh] lg:max-h-none overflow-y-auto pr-2">
         <div className="relative pl-8 w-full">
           {experiences.map((experience, index) => (
             <motion.div
@@ -74,6 +74,20 @@ export default function Experiences() {
               <div className="font-semibold text-base lg:text-xl text-theme-primary mt-2">
                 {experience.date}
               </div>
+
+              {experience.subtitle && (
+                <p className="text-sm text-white/70 mt-1">{experience.subtitle}</p>
+              )}
+
+              {experience.highlights && experience.highlights.length > 0 && (
+                <ul className="mt-4 space-y-2 list-disc list-inside text-sm lg:text-base text-white/90 max-w-2xl">
+                  {experience.highlights.map((item, i) => (
+                    <li key={i} className="leading-snug">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </motion.div>
           ))}
         </div>

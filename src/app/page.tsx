@@ -24,17 +24,21 @@ export default function Page() {
  );
 }
 
+const siteUrl =
+ process.env.NEXT_PUBLIC_WEBSITE_DOMAIN ?? 'https://portfolio-v3-git-main-abishekbalances-projects.vercel.app';
+
 export const metadata: Metadata = {
+ metadataBase: new URL(siteUrl),
  title: 'Abishek Raj A P | Portfolio',
  description:
-  "Learn about Abishek Raj A P's journey in web development and design, explore his projects, and stay updated through his blog, where he shares insights and experiences from his work.",
+  'AI & full-stack developer at C-DAC Delhi—multilingual RAG, assessment platforms, and production systems. Explore projects in Flutter, FastAPI, React, and more.',
  openGraph: {
   title: 'Abishek Raj A P | Portfolio',
   description:
-   "Learn about Abishek Raj A P's journey in web development and design, explore his projects, and stay updated through his blog, where he shares insights and experiences from his work.",
+   'AI & full-stack developer at C-DAC Delhi—multilingual RAG, assessment platforms, and production systems. Explore projects in Flutter, FastAPI, React, and more.',
   images: [
    {
-    url: `${process.env.NEXT_PUBLIC_WEBSITE_DOMAIN}/thumbnail.png`,
+    url: '/thumbnail.png',
     width: 1200,
     height: 630,
     alt: 'Abishek Raj A P Portfolio Thumbnail',
@@ -47,7 +51,7 @@ export const metadata: Metadata = {
   card: 'summary_large_image',
   title: 'Abishek Raj A P | Portfolio',
   description:
-   "Learn about Abishek Raj A P's journey in web development and design, explore his projects, and stay updated through his blog, where he shares insights and experiences from his work.",
-  images: [`${process.env.NEXT_PUBLIC_WEBSITE_DOMAIN}/thumbnail.png`],
+   'AI & full-stack developer at C-DAC Delhi—multilingual RAG, assessment platforms, and production systems. Explore projects in Flutter, FastAPI, React, and more.',
+  images: ['/thumbnail.png'],
  },
 };

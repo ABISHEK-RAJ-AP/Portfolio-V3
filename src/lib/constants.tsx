@@ -9,6 +9,8 @@ import Works from '@/components/works';
 
 import { Section, SectionColors, Sections } from './types';
 
+export { experiences } from './experience-data';
+
 // -------------------------------------------------------------
 // Animation Durations
 // -------------------------------------------------------------
@@ -17,40 +19,6 @@ export const ANIMATION_DURATION = {
   MEDIUM: 0.4,
   LONG: 0.8,
 };
-
-// -------------------------------------------------------------
-// EXPERIENCES (UPDATED + CORRECTED)
-// -------------------------------------------------------------
-export const experiences = [
-  {
-    date: 'Oct 2025 – Present',
-    title: 'C-DAC Delhi',
-    role: 'Project Associate (AI & Full Stack Development)',
-    description:
-      'Contributing to a sovereign multilingual AI chatbot under the Digital Census 2027 initiative, integrating Spring Boot, Rasa, PgVector, and vLLM for secure, scalable, and explainable LLM-powered interactions.',
-  },
-  {
-    date: 'Feb 2025 – Aug 2025',
-    title: 'C-DAC Delhi',
-    role: 'WBL Intern (Full Stack Development)',
-    description:
-      'Engineered the CHMS (C-DAC Hiring Management System) using Spring Boot and React.js with JWT auth, RBAC, and bulk import for 10K+ candidate records. Built an AI-powered resume shortlisting pipeline using OCR, Transformer embeddings, and XGBoost. Developed multilingual dashboards with i18n, real-time PDF/Excel export, and created a conversational internal AI assistant using Spring Boot APIs, semantic search, and React UI.',
-  },
-  {
-    date: 'Nov 2023 – May 2024',
-    title: 'CodeJet',
-    role: 'Software Engineer',
-    description:
-      'Contributed to full-stack development for client projects, building scalable and robust web applications using React and Node.js.',
-  },
-  {
-    date: 'Jun 2024 – Jul 2024',
-    title: 'Nanlogical Consultance Pvt Ltd',
-    role: 'Junior Web Developer Intern',
-    description:
-      'Assisted in building data-driven web solutions, enhancing client business performance through analytics-driven feature development.',
-  },
-];
 
 // -------------------------------------------------------------
 // SECTIONS
@@ -120,30 +88,30 @@ export const SECTION_THEME_MAP: {
 export const WORKS_ITEMS = [
   {
     cover: codenest,
-    title: 'CodeNest',
-    subject: 'Realtime Collaborative Code Editor',
+    title: 'Reviro AI',
+    subject: 'Inventory Intelligence System · ICERCS2024',
     description:
-      'A real-time collaborative code editor built using Flask, React, and WebSockets, enabling seamless team coding with low-latency sync.',
-    link: 'https://github.com/ABISHEK-RAJ-AP/CodeNest-Collaborative-Editor',
-    techStack: ['Flutter', 'Firebase', 'Machine Learning', 'Google Cloud'],
+      'AI-powered inventory optimization using ARIMA and LSTM forecasting for perishable goods, with dynamic pricing and end-to-end mobile, analytics, and retailer–consumer workflows.',
+    link: 'https://github.com/ABISHEK-RAJ-AP',
+    techStack: ['Flutter', 'TensorFlow Lite', 'Firebase', 'ARIMA', 'LSTM'],
   },
   {
     cover: fitsphereai,
-    title: 'FitSphereAI',
-    subject: 'AI-Driven Fitness Tracking',
+    title: 'OmniQuery',
+    subject: 'Multilingual Site Intelligence Layer',
     description:
-      'AI-powered fitness assistant providing posture correction, real-time tracking, and personalized recommendations.',
-    link: 'https://github.com/ABISHEK-RAJ-AP/FitSphereAI',
-    techStack: ['TensorFlow', 'Streamlit', 'Python', 'Firebase'],
+      'Autonomous platform that crawls, indexes, and semantically queries websites across 22 Indian languages—source-grounded citizen query resolution via a lightweight embeddable widget.',
+    link: 'https://github.com/ABISHEK-RAJ-AP',
+    techStack: ['Python', 'FastAPI', 'React', 'Qdrant', 'Redis', 'Sarvam LLM'],
   },
   {
     cover: caraura,
-    title: 'CarAura',
-    subject: 'Mobile App Prototype for Electric Vehicles',
+    title: 'PMC Meeting Hub',
+    subject: 'Meeting Intelligence Platform',
     description:
-      'A smart vehicle management and safety companion app designed for EVs, improving driving efficiency and monitoring.',
-    link: 'https://github.com/ABISHEK-RAJ-AP/CarAura-Mobiliothon4.0',
-    techStack: ['Flutter', 'Google Maps API', 'AI', 'Node.js', 'Expo'],
+      'AI-generated reports, action-item tracking, and real-time multi-user collaboration—plus priority matrix, velocity dashboards, and cross-meeting analytics in a secure Windows desktop app.',
+    link: 'https://github.com/ABISHEK-RAJ-AP',
+    techStack: ['Electron', 'React', 'FastAPI', 'Socket.IO'],
   },
 ];
 

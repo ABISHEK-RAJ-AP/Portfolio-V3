@@ -56,11 +56,11 @@ export default function Home() {
 
    {/* Tagline Below */}
    <p className="text-xl sm:text-3xl text-white text-center mt-5 px-4">
-   Where 
+    AI & full-stack engineer building
     <span className="text-theme-primary">
-     <i>{` creativity `}</i>
+     <i>{` production systems `}</i>
     </span>
-    meets code—crafting solutions that matter.
+    for public impact—from RAG to real-time platforms.
    </p>
 
    {/* Contact Button - Now with Smooth Hover & Responsive Fix */}
