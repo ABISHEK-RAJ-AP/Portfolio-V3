@@ -6,6 +6,11 @@ export type Experience = {
   highlights: string[];
 };
 
+/** Sidebar headline on the Experiences section (Feb 2025 – present at C-DAC). */
+export const EXPERIENCE_HEADLINE = {
+  emphasis: '1+ Years',
+  label: '@ C-DAC Delhi',
+};
 export const experiences: Experience[] = [
   {
     date: 'Nov 2025 – Present',

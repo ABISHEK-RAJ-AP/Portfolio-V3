@@ -1,5 +1,5 @@
 'use client';
-import { experiences } from '@/lib/constants';
+import { experiences, EXPERIENCE_HEADLINE } from '@/lib/constants';
 import { motion } from 'framer-motion';
 
 export default function Experiences() {
@@ -7,7 +7,7 @@ export default function Experiences() {
     <div className="flex flex-col-reverse gap-5 lg:flex-row items-center lg:gap-24 relative lg:right-40 mr-5">
       <div className="relative flex flex-col items-center">
         <span className="text-lg lg:text-2xl text-white mb-2 text-center">
-          . <b>AI & Full Stack</b> @ C-DAC
+          . <b>{EXPERIENCE_HEADLINE.emphasis}</b> {EXPERIENCE_HEADLINE.label}
         </span>
         {/* Animated SVG underline */}
         <motion.svg

@@ -9,7 +9,7 @@ import Works from '@/components/works';
 
 import { Section, SectionColors, Sections } from './types';
 
-export { experiences } from './experience-data';
+export { experiences, EXPERIENCE_HEADLINE } from './experience-data';
 
 // -------------------------------------------------------------
 // Animation Durations
